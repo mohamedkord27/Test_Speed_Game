@@ -1,0 +1,115 @@
+:root{
+    --main-color: #2196f3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+.game{
+    background-color: #eee;
+    height: 100vh;
+}
+.name{
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.message{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+.message span{
+    color: green;
+    font-weight: bold;
+}
+.message span::before{
+    content: "[ ";
+}
+.message span::after{
+    content: " ]";
+}
+.start{
+    background-color: #E91E63;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+.the-word{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-color);
+}
+.input{
+    width: 100%;
+    border: 3px solid var(--main-color);
+    padding: 20px;
+    margin: 15px 0;
+    caret-color: var(--main-color);
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+input:focus{
+    outline: none;
+}
+.upcoming-words{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.upcoming-words div{
+    color: white;
+    background-color: var(--main-color);
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+.control span{
+    font-weight: bold;
+    color: green;
+}
+.finish{
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.finish .good{
+    color: green;
+}
+.finish .bad{
+    color: red;
+}
